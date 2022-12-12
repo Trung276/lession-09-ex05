@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple caculator</title>
+</head>
+<h1 style="color: blue">Caculator</h1>
+<style>
+    button {
+        height: 25px;
+        width: 30px;
+    }
+    th, td {
+        border: 5px solid white;
+    }
+</style>
+<body>
+<table style="border: 2px solid black">
+    <tr>
+        <td colspan="4" style="height: 25px">
+            <input type="text" id="view" value="">
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <button value="1" onclick="display(this.value)">1</button>
+        </td>
+        <td>
+            <button value="2" onclick="display(this.value)">2</button>
+        </td>
+        <td>
+            <button value="3" onclick="display(this.value)">3</button>
+        </td>
+        <td>
+            <button value="+" onclick="display(this.value)">+</button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button value="4" onclick="display(this.value)">4</button>
+        </td>
+        <td>
+            <button value="5" onclick="display(this.value)">5</button>
+        </td>
+        <td>
+            <button value="6" onclick="display(this.value)">6</button>
+        </td>
+        <td>
+            <button value="-" onclick="display(this.value)">-</button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button value="7" onclick="display(this.value)">7</button>
+        </td>
+        <td>
+            <button value="8" onclick="display(this.value)">8</button>
+        </td>
+        <td>
+            <button value="9" onclick="display(this.value)">9</button>
+        </td>
+        <td>
+            <button value="*" onclick="display(this.value)">x</button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button type="button" onclick="reset()">C</button>
+        </td>
+        <td>
+            <button value="0" onclick="display(this.value)">0</button>
+        </td>
+        <td>
+            <button value="=" onclick="caculator()">=</button>
+        </td>
+        <td>
+            <button value="/" onclick="display(this.value)">/</button>
+        </td>
+    </tr>
+</table>
+<script src="function.js"></script>
+</body>
+</html>
